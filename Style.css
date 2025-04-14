@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures wrapping for responsiveness */
+    justify-content: space-around; /* Adjust alignment */
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+      font-size: 14px; /* Adjust font size for very small screens */
+    }
+  }
